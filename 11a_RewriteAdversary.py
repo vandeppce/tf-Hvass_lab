@@ -100,3 +100,4 @@ ax.imshow(np.squeeze(noisy_image) / 255.0, interpolation='spline16')
 ax.set_xlabel(xlabel)
 
 plt.show()
+sess.close()
