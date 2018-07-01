@@ -162,4 +162,17 @@ class Inception5h:
 
         return gradient
 
+    def get_layer_names(self, layer_ids):
+        """
+        Return a list of names for the layers with the given id's.
+        """
+
+        return [self.layer_names[idx] for idx in layer_ids]
+
+    def get_layer_tensors(self, layer_ids):
+        """
+        Return a list of references to the tensors for the layers with the given id's.
+        """
+
+        return [self.layer_tensors[idx] for idx in layer_ids]
 ########################################################################
